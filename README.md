@@ -11,7 +11,7 @@
 - использовать заранее приготовленные графические ресурсы из папок [src/images](./src/images) и [src/gallery](./src/gallery)
 - максимально соблюдать отступы и цвета как в макете
 
-### Какие CSS свойства могут понадобятся
+### Какие CSS свойства могут понадобиться
 
 `width`, `height`, `min-heigt`, `background`, `display`, `position`, `color`, `font`, `margin`, `padding`, `box-sizing`, `line-height`, `cursor`, `text-decoration`, `list-style`, `border-radius`, `text-align`, `border`, `white-space`, `vertical-align`
 
