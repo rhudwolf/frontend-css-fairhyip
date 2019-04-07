@@ -1,11 +1,27 @@
 /* ----- QUESTIONS ----- */
 
 /*HEADER*/
-/*1. If .lang-list & .auth binded in <div>, than display: flex for <div>; */
-/*2. If .mainmenu & .long-list binded in <div>, than display: flex for <div>; */
+/* 
+В хедере 2 строки, при этом в каждом из строк по 2 блока. Если бы было 2 div-а, где 
+в 1м .lang-list & .auth, а во 2м .mainmenu & .logo & .meinmenu, тогда c помощью 
+display:flex к родительским div-ам понятно как делать блоки по строкам. Сейчас не понятно.
+*/
 
 /*MAIN*/
-/*1. If img binded in <div> and h2 + p binded in <div>, than display:flex for parent div */
+/* 
+Знаю как сделать слева картинку с display:flex, если:
+
+<article class="article">
+   <div class="article-img">
+       <img src="gallery/pict4.png" alt="" width="95" height="65" />
+   </div>
+   <div class="article-content">
+       <h2> bla bla example </h2>
+       <p> bla bla example </h2>
+   </div>
+</article>
+*/
+  			
 
 /* ----- Fonts ----- */
 
