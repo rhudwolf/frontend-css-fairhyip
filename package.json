@@ -16,6 +16,6 @@
 	"scripts": {
 		"start": "browser-sync start --server \"src\" --files \"src\" --open \"external\" --no-notify --no-ghost-mode",
 		"test": "htmlhint src/**/*.html",
-		"pretest": "neutrino stylelint"
+		"pretest": "neutrino stylelint --fix"
 	}
 }
