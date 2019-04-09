@@ -80,8 +80,10 @@ h2 {
 	margin-left: auto;
 }
 
-.header .mainmenu {
+.header .mainmenu a {
 	font-family: 'Georgia', sans-serif;
+	display: block;
+	padding: 12px 30px;
 }
 
 .header .menu-list {
@@ -94,7 +96,7 @@ h2 {
 }
 
 .header .menu-item {
-	padding: 12px 30px;
+
 }
 
 .header .menu-item:hover {
