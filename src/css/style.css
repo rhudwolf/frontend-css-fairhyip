@@ -204,6 +204,8 @@ h2 {
 .content .article img {
 	position: absolute;
 	left: 1%;
+	width: 70px;
+    height: auto;
 }
 
 /* ----- FOOTER ----- */
