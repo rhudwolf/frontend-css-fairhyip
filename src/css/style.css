@@ -53,7 +53,7 @@ h2 {
 /* ----- HEADER ----- */
 
 .wrapper {
-	width: 1200px;
+	width: 1024px;
 }
 
 .header {
@@ -82,8 +82,10 @@ h2 {
 
 .header .mainmenu a {
 	font-family: 'Georgia', sans-serif;
-	display: block;
-	padding: 12px 30px;
+    display: inline-block;
+    text-align: center;
+	padding: 15px 30px;
+	min-width: 100px;
 }
 
 .header .menu-list {
@@ -91,17 +93,21 @@ h2 {
 	background: #f3f2f1;
 	border-radius: 5px;
 	justify-content: space-between;
-	width: 700px;
 	overflow: hidden;
 }
 
 .header .menu-item {
-	
+	margin: auto 0;
+}
+
+.header .menu-item:hover {
+	background: linear-gradient(to bottom, rgba(210, 141, 25, 0), rgba(210, 141, 25, 1));
+	min-height: 100%;
+	margin: auto 0;
 }
 
 .header .menu-item a:hover {
-	background: linear-gradient(to bottom, rgba(210, 141, 25, 0), rgba(210, 141, 25, 1));
-	/* border-radius: 5px; */
+	min-height: 100%;
 }
 
 .header .lang-list {
@@ -124,11 +130,13 @@ h2 {
 	font-size: 11px;
 }
 
-.lang-list .lang-item:nth-child(-n+3) {
+.lang-list .lang-item:nth-child(n) {
 	border-right: 1px solid #fff;
 }
 
-
+.lang-list .lang-item:nth-last-child(1) {
+	border-right: none;
+}
 
 .header .auth {
 	position: absolute;
@@ -157,15 +165,18 @@ h2 {
 	color: #e8d1a4;
 }
 
-.header .auth .signin:after {
+.header .auth-link:nth-child(n)::after {
 	content: '|';
 	margin-left: 7px;
+}
+
+.header .auth-link:nth-last-child(1)::after {
+	content: '';
 }
 
 /* ----- MAIN ----- */
 
 .content {
-	position: relative;
 	margin-bottom: 60px;
 }
 
@@ -197,13 +208,14 @@ h2 {
 }
 
 .content .article {
+	position: relative;
 	margin-bottom: 40px;
 	margin-left: 12em;
 }
 
 .content .article img {
 	position: absolute;
-	left: 2%;
+	left: -12%;
 	width: 70px;
     height: auto;
 }
@@ -216,16 +228,8 @@ h2 {
 	padding: 40px 20px 20px 10px;
 	justify-content: space-between;
 	width: 1200px;
-    margin: 0 auto;
-}
-
-.footer:before {
-	position: absolute;
-	content: '';
-	height: 1px;
-	width: 1200px;
-	background-color: rgba(210, 141, 25, 0.44);
-	top: 0%;
+	margin: 0 auto;
+	border-top: 1px solid rgba(215, 182, 73, 0.44);
 }
 
 .footer .menu-list {
@@ -238,9 +242,14 @@ h2 {
 	margin-left: 20px;
 }
 
-.footer .menu-item:nth-child(-n+5)::after {
+.footer .menu-item:nth-child(n)::after {
 	content: '|';
 }
+
+.footer .menu-item:nth-last-child(1)::after {
+	content: '';
+}
+
 
 .footer .menu-item a {
 	color: #fff;
